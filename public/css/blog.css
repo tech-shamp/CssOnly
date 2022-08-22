@@ -1,0 +1,44 @@
+main {
+  width: 100%;
+  background: var(--gray-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section {
+  width: 70%;
+  margin: 3.2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main section div {
+  width: 450px;
+  height: 300px;
+  margin: 2.2rem;
+  border: 2px solid var(--gray-800);
+  border-radius: 20px;
+  padding: 1.8rem;
+  background: var(--gray-700);
+  transition: all 0.5s;
+}
+main section div:hover {
+  box-shadow: inset 0px 0px 15px var(--black);
+  cursor: not-allowed;
+}
+main section div p {
+  margin: 1.2rem 0;
+}
+main section div button {
+  padding: 0.4rem 1.8rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-weight: bold;
+  background: var(--orange);
+  transition: all 0.5s;
+}
+main section div button:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 2px 4px var(--black);
+}
