@@ -6,7 +6,7 @@ const port = process.env.PORT || 999
 const path = Path.join(__dirname, "public")
 
 const titles = {
-  tag: " - Css Overview",
+  tag: "Css Overview",
   home: "Home",
   about: "About",
   blog: "Blog",
@@ -22,28 +22,32 @@ app.use("/img", express.static(Path.join(path, "img")))
 app.get("/", (req, res) => {
   console.log(req.url)
   res.render("index", {
-    title: titles.home + titles.tag,
+    title: titles.home,
+    tag: titles.tag,
   })
 })
 
 app.get("/about", (req, res) => {
   console.log(req.url)
   res.render("about", {
-    title: titles.about + titles.tag,
+    title: titles.about,
+    tag: titles.tag,
   })
 })
 
 app.get("/blog", (req, res) => {
   console.log(req.url)
   res.render("blog", {
-    title: titles.blog + titles.tag,
+    title: titles.blog,
+    tag: titles.tag,
   })
 })
 
 app.get("/contact", (req, res) => {
   console.log(req.url)
   res.render("contact", {
-    title: titles.contact + titles.tag,
+    title: titles.contact,
+    tag: titles.tag,
   })
 })
 
