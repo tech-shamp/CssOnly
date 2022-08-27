@@ -23,7 +23,7 @@ nav li:hover a {
   color: var(--white);
 }
 nav li:hover {
-  transform: translateY(-0.2rem);
+  transform: translateY(-0.1rem);
 }
 
 /* footer */
@@ -32,4 +32,6 @@ footer {
   padding: 2rem 10rem;
   text-align: center;
   background: var(--orange);
+  color: var(--white);
+  font-weight: 400;
 }
